@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Tour de Pizz</title>
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html#un">Accueil</a></li>
+        <li><a href="../index.html#pizzavedette">Pizza du mois</a></li>
+        <li><a href="../index.html#contenuadditionnel">Menu</a></li>
+        <li><a href="../index.html#localisation">Horaires & Localisation</a></li>
+        <li><a href="../index.html#apropos">A propos</a></li>
+      </ul>
+</nav>
+
+<header>
+    <img src="img/placeholder-logo.png" class="logo" alt="Le Logo">
+</header>
+
+<div id="banner">
+    <img src="img/uglyasstruck2.jpg" alt="Le Camion">
+</div>
+
+    <div id="un">
+        <h1>Retrouvez ici nos encas</h1>
+        <p>Besoin d'une pause gourmande ? Explorez notre sélection d'encas et boissons pour accompagner chaque moment !</p>
+    </div>
+
+    <div id="page">		
+        <div id="menu">
+            <h2>Menu</h2>
+        <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coca-Cola</td>
+                    <td>2.00</td>
+                    <td><img src="img/coca-cola.png" class="encas" alt="Coca-Cola"></td>
+                </tr>
+                <tr>
+                    <td>Sprite</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/sprite.png" class="encas" alt="Sprite"></td>
+                </tr>
+                <tr>
+                    <td>Pepsi</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/pepsi.png" class="encas" alt="Pepsi"></td>
+                </tr>
+                <tr>
+                    <td>Fanta Orange</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/fanta-orange.png" class="encas" alt="Fanta Orange"></td>
+                </tr>
+                <tr>
+                    <td>Thé glacé</td>
+                    <td>2.50 €</td>
+                    <td><img src="img/ice-tea.png" class="encas" alt="Thé glacé"></td>
+                </tr>
+                <tr>
+                    <td>Eau minérale</td>
+                    <td>1.50 €</td>
+                    <td><img src="img/eau-minerale.png" class="encas" alt="Eau minérale"></td>
+                </tr>
+                <tr>
+                    <td>Chips nature</td>
+                    <td>1.80 €</td>
+                    <td><img src="img/chips-nature.png" class="encas" alt="Chips nature"></td>
+                </tr>
+                <tr>
+                    <td>Chips paprika</td>
+                    <td>1.80 €</td>
+                    <td><img src="img/chips-paprika.png" class="encas" alt="Chips paprika"></td>
+                </tr>
+                <tr>
+                    <td>Brownie</td>
+                    <td>3.00 €</td>
+                    <td><img src="img/brownie.png" class="encas" alt="Brownie"></td>
+                </tr>
+                <tr>
+                    <td>Cookie chocolat</td>
+                    <td>2.50 €</td>
+                    <td><img src="img/cookie.png" class="encas" alt="Cookie chocolat"></td>
+                </tr>
+            </tbody>
+        </table>
+       
+        
+    <!--bouton-->
+    <button class="button" id="page2">Page 2</button>
+    <a href="../index.html#contenuadditionnel" class="button">Retour à la page d'accueil !</a>
+    
+    <!--page 2-->
+    <script>
+
+            function changePage(){
+            const aff=document.getElementById("menu");
+                aff.innerHTML=`
+        <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Panini Poulet</td>
+                    <td>4.50 €</td>
+                    <td><img src="img/panini-poulet.png" class="encas" alt="Panini Poulet"></td>
+                </tr>
+                <tr>
+                    <td>Sandwich Jambon-Beurre</td>
+                    <td>3.50 €</td>
+                    <td><img src="img/sandwich-jambon-beurre.png" class="encas" alt="Sandwich Jambon-Beurre"></td>
+                </tr>
+                <tr>
+                    <td>Wrap Végétarien</td>
+                    <td>4.00 €</td>
+                    <td><img src="img/wrap-vegetarien.png" class="encas" alt="Wrap Végétarien"></td>
+                </tr>
+                <tr>
+                    <td>Quiche Lorraine</td>
+                    <td>5.00 €</td>
+                    <td><img src="img/quiche-lorraine.png" class="encas" alt="Quiche Lorraine"></td>
+                </tr>
+                <tr>
+                    <td>Crêpe Nutella</td>
+                    <td>3.50 €</td>
+                    <td><img src="img/crepe-nutella.png" class="encas" alt="Crêpe Nutella"></td>
+                </tr>
+                <tr>
+                    <td>Muffin Myrtille</td>
+                    <td>2.80 €</td>
+                    <td><img src="img/muffin-myrtille.png" class="encas" alt="Muffin Myrtille"></td>
+                </tr>
+                <tr>
+                    <td>Pain au Chocolat</td>
+                    <td>2.20 €</td>
+                    <td><img src="img/pain-au-chocolat.png" class="encas" alt="Pain au Chocolat"></td>
+                </tr>
+                <tr>
+                    <td>Donut Vanille</td>
+                    <td>2.50 €</td>
+                    <td><img src="img/donut-vanille.png" class="encas" alt="Donut Vanille"></td>
+                </tr>
+                <tr>
+                    <td>Milkshake Fraise</td>
+                    <td>4.00 €</td>
+                    <td><img src="img/milkshake-fraise.png" class="encas" alt="Milkshake Fraise"></td>
+                </tr>
+                <tr>
+                    <td>Glace Chocolat</td>
+                    <td>3.00 €</td>
+                    <td><img src="img/glace-chocolat.png" class="encas" alt="Glace Chocolat"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="button" id="page1">Page 1</button>
+        <a href="../index.html" class="button">Retour à la page d'accueil !</a>
+    `;
+
+        document.getElementById("page1").addEventListener("click", changePage1);
+    }
+
+    //retour page 1
+
+        function changePage1(){
+            const aff=document.getElementById("menu");
+                aff.innerHTML=`
+            <h1>Retrouvez ici nos pizzas</h1>
+         <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coca-Cola</td>
+                    <td>2.00</td>
+                    <td><img src="img/coca-cola.png" class="encas" alt="Coca-Cola"></td>
+                </tr>
+                <tr>
+                    <td>Sprite</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/sprite.png" class="encas" alt="Sprite"></td>
+                </tr>
+                <tr>
+                    <td>Pepsi</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/pepsi.png" class="encas" alt="Pepsi"></td>
+                </tr>
+                <tr>
+                    <td>Fanta Orange</td>
+                    <td>2.00 €</td>
+                    <td><img src="img/fanta-orange.png" class="encas" alt="Fanta Orange"></td>
+                </tr>
+                <tr>
+                    <td>Thé glacé</td>
+                    <td>2.50 €</td>
+                    <td><img src="img/ice-tea.png" class="encas" alt="Thé glacé"></td>
+                </tr>
+                <tr>
+                    <td>Eau minérale</td>
+                    <td>1.50 €</td>
+                    <td><img src="img/eau-minerale.png" class="encas" alt="Eau minérale"></td>
+                </tr>
+                <tr>
+                    <td>Chips nature</td>
+                    <td>1.80 €</td>
+                    <td><img src="img/chips-nature.png" class="encas" alt="Chips nature"></td>
+                </tr>
+                <tr>
+                    <td>Chips paprika</td>
+                    <td>1.80 €</td>
+                    <td><img src="img/chips-paprika.png" class="encas" alt="Chips paprika"></td>
+                </tr>
+                <tr>
+                    <td>Brownie</td>
+                    <td>3.00 €</td>
+                    <td><img src="img/brownie.png" class="encas" alt="Brownie"></td>
+                </tr>
+                <tr>
+                    <td>Cookie chocolat</td>
+                    <td>2.50 €</td>
+                    <td><img src="img/cookie.png" class="encas" alt="Cookie chocolat"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button class="button" id="page2">Page 2</button>
+        <a href="../index.html" class="button">Retour à la page d'accueil !</a>`
+
+        document.getElementById("page2").addEventListener("click", changePage);
+    }
+
+        document.getElementById("page2").addEventListener("click", changePage);
+
+
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Vous pouvez nous contacter au...</h1>
+        <p>07 68 12 64 76</p>
+        <p>contact@latourdepizz.com</p>
+        <p>© 2024 - La Tour de Pizz - Tous droits réservés</p>
+    </footer>
+
+    </body>
+</html>

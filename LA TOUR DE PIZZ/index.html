@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Tour de Pizz</title>
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#un">Accueil</a></li>
+        <li><a href="#pizzavedette">Pizza du mois</a></li>
+        <li><a href="#contenuadditionnel">Menu</a></li>
+        <li><a href="#localisation">Horaires & Localisation</a></li>
+        <li><a href="#apropos">A propos</a></li>
+      </ul>
+</nav>
+
+<header>
+    <img src="img/placeholder-logo.png" class="logo" alt="Le Logo">
+</header>
+
+<div id="banner">
+    <img src="img/uglyasstruck2.jpg" alt="Le Camion">
+</div>
+
+<div id="un">
+    <h1>La Tour de Pizz</h1>
+    <p>Bienvenue à La Tour de Pizz, où la tradition italienne rencontre la créativité locale pour vous offrir des pizzas inoubliables !</p>
+</div>
+
+    <div id="page">		
+		<div id="pizzavedette">
+			<img src="img/savoyarde.png" width="370" height="370" class="pizza" alt="Pizza Savoyarde">
+		</div>
+
+        <div id="descvedette">
+            <h1>Pizza du mois</h1>
+            <h2>La savoyarde</h2>
+            <p>Savourez un véritable goût de montagne avec La Savoyarde ! Une base de crème fraîche onctueuse, garnie de pommes de terre fondantes, de lardons fumés, d'oignons confits et de généreux morceaux de reblochon fondant. Le tout est sublimé par une pincée de thym frais pour une expérience authentique et réconfortante. Disponible seulement ce mois-ci !</p>
+        </div>
+
+    <div id="page2">	
+        <div id="menu">
+            <h1>Retrouvez ici nos pizzas</h1>
+			<img src="img/pizza-icon.png" width="300" height="300" class="sodapizza" alt="Menu Pizza">
+              
+        <a href="page-menu/index.html#menu" class="button">Commandez ici !</a>
+
+        </div>
+
+        <div id="contenuadditionnel">
+            <h1>Un encas ? Une boisson ?</h1>
+            <img src="img/soda-icon.png" width="300" height="300" class="sodapizza" alt="Boissons et encas">
+            <a href="page-encas/index.html#menu" class="button">Commandez ici !</a>
+        </div>
+    
+    </div>
+
+    <div id="page3">	
+    <div id=localisation>
+        <h1>Retrouvez nous ici</h1>
+        <p>Pl. du Champ de Foire, 76500 Elbeuf</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1656.6721257921579!2d1.0120994319003902!3d49.290981867879864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1731809586822!5m2!1sen!2sfr" width="370" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="center"></iframe>
+    </div>
+
+    <div id="horaires">
+        <h1>Nos horaires</h1>
+        <table id="tableau" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Heures d'ouverture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lundi</td>
+                    <td>12h - 14h / 18h - 22h</td>
+                </tr>
+                <tr>
+                    <td>Mardi</td>
+                    <td>12h - 14h / 18h - 22h</td>
+                </tr>
+                <tr>
+                    <td>Mercredi</td>
+                    <td>12h - 14h / 18h - 22h</td>
+                </tr>
+                <tr>
+                    <td>Jeudi</td>
+                    <td>12h - 14h / 18h - 22h</td>
+                </tr>
+                <tr>
+                    <td>Vendredi</td>
+                    <td>12h - 14h / 18h - 23h</td>
+                </tr>
+                <tr>
+                    <td>Samedi</td>
+                    <td>12h - 14h / 18h - 23h</td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td>12h - 14h / 18h - 21h</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="page4">
+    <div id="apropos">
+        <h1>A propos de nous</h1>
+        <button class="langbutton" id="english-button" type="button">English</button>
+        <p>
+            Bienvenue à La Tour de Pizz, votre food truck artisanal situé à Elbeuf, en Normandie. Notre mission est simple : proposer des pizzas savoureuses et originales tout en offrant une expérience culinaire unique et en respectant des valeurs simples : la qualité et le goût.
+            <br><br>
+            L'idée m'est venue lors d'un voyage en Italie, où j'ai découvert que la pizza est bien plus qu'un simple plat : c'est un moment de convivialité. Nous avons voulu recréer cet esprit en alliant tradition et créativité.
+            <br><br>
+            À La Tour de Pizz, personne n'est oublié : il y en a pour tout le monde. Des recettes classiques aux recettes originales, rassurez-vous, il y a aussi des options végétariennes et sans gluten. Avec des emballages éco-responsables et des produits locaux, nous vous proposons un repas délicieux, bon pour vous et pour la planète, alors venez découvrir notre tour de saveurs !
+        </p>
+    </div>
+
+    <script>
+        //BOUTON ANGLAIS
+        function changeLanguage() {
+            const aff = document.getElementById("apropos");
+            aff.innerHTML = `
+                <h1>About us</h1>
+                <button class="langbutton" id="french-button" type="button">French</button>
+                <p>
+                    Welcome to La Tour de Pizz, your artisanal food truck located in Elbeuf, Normandy. Our mission is simple : offer tasty, original pizza while providing a unique culinary experience and respect simple values : quality and taste. 
+                    <br><br>
+                    The idea came to me during a trip to Italy, where I discovered that pizza is much more than a simple dish: it was a moment of conviviality. We wanted to recreate this spirit by combining tradition and creativity.
+                    <br><br>
+                    At La Tour de Pizz, nobody is left out: from classic to original recipes, rest assured, there are also vegetarian and gluten-free options. Wth eco-responsible packaging and local products,we offer you a delicious meal that's good for you and foor the planet, so come and discover our tower of flavors!
+                </p>`;
+
+            document.getElementById("french-button").addEventListener("click", changeLanguage2);
+        }
+
+        //RETOUR FRANCAIS
+        function changeLanguage2() {
+            const aff = document.getElementById("apropos");
+            aff.innerHTML = `
+                <h1>A propos de nous</h1>
+                <button class="langbutton" id="english-button" type="button">English</button>
+                <p>
+                    Bienvenue à La Tour de Pizz, votre food truck artisanal situé à Elbeuf, en Normandie. Notre mission est simple : proposer des pizzas savoureuses et originales tout en offrant une expérience culinaire unique et en respectant des valeurs simples : la qualité et le goût.
+            <br><br>
+            L'idée m'est venue lors d'un voyage en Italie, où j'ai découvert que la pizza est bien plus qu'un simple plat : c'est un moment de convivialité. Nous avons voulu recréer cet esprit en alliant tradition et créativité.
+            <br><br>
+            À La Tour de Pizz, personne n'est oublié : il y en a pour tout le monde. Des recettes classiques aux recettes originales, rassurez-vous, il y a aussi des options végétariennes et sans gluten. Avec des emballages éco-responsables et des produits locaux, nous vous proposons un repas délicieux, bon pour vous et pour la planète, alors venez découvrir notre tour de saveurs !
+                </p>`;
+            
+            document.getElementById("english-button").addEventListener("click", changeLanguage);
+        }
+
+        document.getElementById("english-button").addEventListener("click", changeLanguage);
+
+    </script>
+    </div>
+</div>
+
+    <footer>
+            <h1>Vous pouvez nous contacter au...</h1>
+            <p>07 68 12 64 76</p>
+            <p>contact@latourdepizz.com</p>
+            <p>© 2024 - La Tour de Pizz - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

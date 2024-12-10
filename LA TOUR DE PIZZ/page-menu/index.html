@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Tour de Pizz</title>
+
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html#un">Accueil</a></li>
+        <li><a href="../index.html#pizzavedette">Pizza du mois</a></li>
+        <li><a href="../index.html#contenuadditionnel">Menu</a></li>
+        <li><a href="../index.html#localisation">Horaires & Localisation</a></li>
+        <li><a href="../index.html#apropos">A propos</a></li>
+      </ul>
+</nav>
+
+<header>
+    <img src="img/placeholder-logo.png" class="logo" alt="Le Logo">
+</header>
+
+<div id="banner">
+    <img src="img/uglyasstruck2.jpg" alt="Le Camion">
+</div>
+
+    <div id="un">
+        <h1>Retrouvez ici nos pizzas</h1>
+        <p>Découvrez nos pizzas savoureuses, alliant tradition et créativité pour satisfaire toutes vos envies gourmandes !</p>
+    </div>
+
+    <div id="page">		
+        <div id="menu">
+            <h2>Menu</h2>
+        <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Ingrédients</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Margherita</td>
+                    <td>Tomate, mozzarella, basilic</td>
+                    <td>8,50 €</td>
+                    <td><img src="img/margherita.png" class="pizza" alt="Margherita"></td>
+                </tr>
+                <tr>
+                    <td>La Reine</td>
+                    <td>Crème fraîche, mozzarella, jambon, champignons</td>
+                    <td>10,50 €</td>
+                    <td><img src="img/reine.avif" class="pizza" alt="La Reine"></td>
+                </tr>
+                <tr>
+                    <td>La Savoyarde</td>
+                    <td>Pomme de terre, reblochon, lardons</td>
+                    <td>12,50 €</td>
+                    <td><img src="img/savoyarde.jpg" class="pizza" alt="La Savoyarde"></td>
+                </tr>
+                <tr>
+                    <td>La Quatre Fromages</td>
+                    <td>Mozzarella, gorgonzola, chèvre, parmesan</td>
+                    <td>11,50 €</td>
+                    <td><img src="img/4fromages.avif" class="pizza" alt="La Quatre Fromages"></td>
+                </tr>
+                <tr>
+                    <td>La Calzone</td>
+                    <td>Tomate, mozzarella, jambon, œuf</td>
+                    <td>9,50 €</td>
+                    <td><img src="img/CALZONE.png" class="pizza" alt="La Calzone"></td>
+                </tr>
+                <tr>
+                    <td>La Végétarienne</td>
+                    <td>Tomate, mozzarella, olives noires, champignon, poivron</td>
+                    <td>10,00 €</td>
+                    <td><img src="img/vegetarienne.avif" class="pizza" alt="La Végétarienne"></td>
+                </tr>
+                <tr>
+                    <td>La Diavola</td>
+                    <td>Tomate, mozzarella, salami piquant</td>
+                    <td>11,00 €</td>
+                    <td><img src="img/diavola.png" class="pizza" alt="La Diavola"></td>
+                </tr>
+                <tr>
+                    <td>La Prosciutto</td>
+                    <td>Tomate, mozzarella, jambon de Parme</td>
+                    <td>12,00 €</td>
+                    <td><img src="img/hawaienne.png" class="pizza" alt="La Prosciutto"></td>
+                </tr>
+                <tr>
+                    <td>La Hawaïenne</td>
+                    <td>Tomate, mozzarella, jambon, ananas</td>
+                    <td>10,50 €</td>
+                    <td><img src="img/hawaienne.png" class="pizza" alt="La Hawaïenne"></td>
+                </tr>
+                <tr>
+                    <td>La Campagnarde</td>
+                    <td>Tomate, mozzarella, champignons, lardons, oignons</td>
+                    <td>11,50 €</td>
+                    <td><img src="img/campagnarde.png" class="pizza" alt="La Campagnarde"></td>
+                </tr>
+            </tbody>
+        </table>
+       
+        
+    <!--bouton-->
+    <button class="button" id="page2">Page 2</button>
+    <a href="../index.html#contenuadditionnel" class="button">Retour à la page d'accueil !</a>
+    
+    <!--page 2-->
+    <script>
+
+            function changePage(){
+            const aff=document.getElementById("menu");
+                aff.innerHTML=`
+        <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Ingrédients</th>
+                <th>Prix</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>La Mexicaine</td>
+                <td>Tomate, mozzarella, bœuf épicé, poivron, jalapeños</td>
+                <td>12,00 €</td>
+                <td><img src="img/mexicaine.png" class="pizza" alt="La Mexicaine"></td>
+            </tr>
+            <tr>
+                <td>La Marinara</td>
+                <td>Tomate, ail, origan, huile d'olive</td>
+                <td>8,00 €</td>
+                <td><img src="img/marinara.png" class="pizza" alt="La Marinara"></td>
+            </tr>
+            <tr>
+                <td>La Fromagère</td>
+                <td>Tomate, mozzarella, camembert, chèvre, brie</td>
+                <td>11,50 €</td>
+                <td><img src="img/fromagere.png" class="pizza" alt="La Fromagère"></td>
+            </tr>
+            <tr>
+                <td>La Bolognaise</td>
+                <td>Tomate, mozzarella, viande hachée, oignons</td>
+                <td>10,00 €</td>
+                <td><img src="img/bolognaise.png" class="pizza" alt="La Bolognaise"></td>
+            </tr>
+            <tr>
+                <td>La Nordique</td>
+                <td>Crème, mozzarella, saumon fumé, aneth</td>
+                <td>13,50 €</td>
+                <td><img src="img/nordique.png" class="pizza" alt= La Nordique"></td>
+            </tr>
+            <tr>
+                <td>La Tartiflette</td>
+                <td>Crème, mozzarella, pommes de terre, lardons, reblochon</td>
+                <td>14,00 €</td>
+                <td><img src="img/tartiflette.png" class="pizza" alt="La Tartiflette"></td>
+            </tr>
+            <tr>
+                <td>La Forestière</td>
+                <td>Crème, mozzarella, champignons, lardons, persil</td>
+                <td>11,50 €</td>
+                <td><img src="img/forestiere.png" class="pizza" alt="La Forestière"></td>
+            </tr>
+            <tr>
+                <td>La Napolitaine</td>
+                <td>Tomate, mozzarella, anchois, câpres, olives</td>
+                <td>10,00 €</td>
+                <td><img src="img/napolitaine.png" class="pizza" alt="La Napolitaine"></td>
+            </tr>
+            <tr>
+                <td>La Texane</td>
+                <td>Tomate, mozzarella, poulet grillé, oignons, sauce barbecue</td>
+                <td>12,50 €</td>
+                <td><img src="img/texane.png" class="pizza" alt="La Texane"></td>
+            </tr>
+            <tr>
+                <td>La Périgourdine</td>
+                <td>Crème, mozzarella, magret de canard, foie gras, champignons</td>
+                <td>15,00 €</td>
+                <td><img src="img/perigoudine.png" class="pizza" alt="La Périgourdine"></td>
+            </tr>
+        </tbody>
+    </table>
+
+        <button class="button" id="page1">Page 1</button>
+        <a href="../index.html" class="button">Retour à la page d'accueil !</a>
+    `;
+
+        document.getElementById("page1").addEventListener("click", changePage1);
+    }
+
+    //retour page 1
+
+        function changePage1(){
+            const aff=document.getElementById("menu");
+                aff.innerHTML=`
+            <h1>Retrouvez ici nos pizzas</h1>
+         <table id="tableaumenu" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Ingrédients</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Margherita</td>
+                    <td>Tomate, mozzarella, basilic</td>
+                    <td>8,50 €</td>
+                    <td><img src="img/margherita.png" class="pizza" alt="Margherita"></td>
+                </tr>
+                <tr>
+                    <td>La Reine</td>
+                    <td>Crème fraîche, mozzarella, jambon, champignons</td>
+                    <td>10,50 €</td>
+                    <td><img src="img/reine.avif" class="pizza" alt="La Reine"></td>
+                </tr>
+                <tr>
+                    <td>La Savoyarde</td>
+                    <td>Pomme de terre, reblochon, lardons</td>
+                    <td>12,50 €</td>
+                    <td><img src="img/savoyarde.jpg" class="pizza" alt="La Savoyarde"></td>
+                </tr>
+                <tr>
+                    <td>La Quatre Fromages</td>
+                    <td>Mozzarella, gorgonzola, chèvre, parmesan</td>
+                    <td>11,50 €</td>
+                    <td><img src="img/4fromages.avif" class="pizza" alt="La Quatre Fromages"></td>
+                </tr>
+                <tr>
+                    <td>La Calzone</td>
+                    <td>Tomate, mozzarella, jambon, œuf</td>
+                    <td>9,50 €</td>
+                    <td><img src="img/CALZONE.png" class="pizza" alt="La Calzone"></td>
+                </tr>
+                <tr>
+                    <td>La Végétarienne</td>
+                    <td>Tomate, mozzarella, olives noires, champignon, poivron</td>
+                    <td>10,00 €</td>
+                    <td><img src="img/vegetarienne.avif" class="pizza" alt="La Végétarienne"></td>
+                </tr>
+                <tr>
+                    <td>La Diavola</td>
+                    <td>Tomate, mozzarella, salami piquant</td>
+                    <td>11,00 €</td>
+                    <td><img src="img/diavola.png" class="pizza" alt="La Diavola"></td>
+                </tr>
+                <tr>
+                    <td>La Prosciutto</td>
+                    <td>Tomate, mozzarella, jambon de Parme</td>
+                    <td>12,00 €</td>
+                    <td><img src="img/hawaienne.png" class="pizza" alt="La Prosciutto"></td>
+                </tr>
+                <tr>
+                    <td>La Hawaïenne</td>
+                    <td>Tomate, mozzarella, jambon, ananas</td>
+                    <td>10,50 €</td>
+                    <td><img src="img/hawaienne.png" class="pizza" alt="La Hawaïenne"></td>
+                </tr>
+                <tr>
+                    <td>La Campagnarde</td>
+                    <td>Tomate, mozzarella, champignons, lardons, oignons</td>
+                    <td>11,50 €</td>
+                    <td><img src="img/campagnarde.png" class="pizza" alt="La Campagnarde"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button class="button" id="page2">Page 2</button>
+        <a href="../index.html" class="button">Retour à la page d'accueil !</a>`
+
+        document.getElementById("page2").addEventListener("click", changePage);
+    }
+
+        document.getElementById("page2").addEventListener("click", changePage);
+
+
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Vous pouvez nous contacter au...</h1>
+        <p>07 68 12 64 76</p>
+        <p>contact@latourdepizz.com</p>
+        <p>© 2024 - La Tour de Pizz - Tous droits réservés</p>
+    </footer>
+
+    </body>
+</html>
